@@ -58,8 +58,8 @@ Recorded offline gross profit was approximately **$253.47M**, compared with **$2
 3. Install requirements: `python -m pip install -r requirements.txt`.
 4. Run the notebook with the project root as the working directory.
 
-> The notebook may be reviewed on GitHub without the CSVs. Running it requires separately obtained, appropriately cleaned input files. The updated standalone notebook is being prepared for publication.
+> The notebook may be reviewed on GitHub without the CSVs. Running it requires separately obtained, appropriately cleaned input files. The cleaned notebook is published as `retail_eda_cleaned.ipynb`. It requires the three cleaned CSV files, which are not hosted publicly.
 
 ## Project status
 
-Core financial calculations were independently checked against the supplied datasets and a cleaned local working notebook was executed successfully. The dataset files remain excluded from the public repository pending redistribution review.
+Core financial calculations were independently checked against the supplied datasets; the cleaned working notebook was executed locally. The cleaned notebook replaces the older Colab version in this repository. Source CSV files remain excluded pending redistribution review.
