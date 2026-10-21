@@ -54,12 +54,17 @@ Recorded offline gross profit was approximately **$253.47M**, compared with **$2
 ## Running the analysis
 
 1. Obtain authorized copies of `events.csv`, `products.csv`, and `countries.csv`.
-2. Put these files in a local `data_clean/` directory, after applying the documented cleaning rules.
+2. Place the three original files in a local folder, for example `raw_data/` (do not commit this folder).
 3. Install requirements: `python -m pip install -r requirements.txt`.
-4. Run the notebook with the project root as the working directory.
+4. Run `python prepare_data.py --input raw_data` to create `data_clean/` automatically.
+5. Open `retail_eda_cleaned.ipynb` and run the cells from the repository root.
 
 > The notebook may be reviewed on GitHub without the CSVs. Running it requires separately obtained, appropriately cleaned input files. The cleaned notebook is published as `retail_eda_cleaned.ipynb`. It requires the three cleaned CSV files, which are not hosted publicly.
 
 ## Project status
 
 Core financial calculations were independently checked against the supplied datasets; the cleaned working notebook was executed locally. The cleaned notebook replaces the older Colab version in this repository. Source CSV files remain excluded pending redistribution review.
+
+## Local-data privacy
+
+The source and cleaned CSVs are intentionally not tracked by Git. Keep `raw_data/` and `data_clean/` on your computer. Do not upload these files publicly until their provenance and redistribution permissions are confirmed.
